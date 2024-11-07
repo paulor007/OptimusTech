@@ -2,6 +2,7 @@
     --text-color: #667085;
     --main-color: #8E2424;
     --background-color: #ffffff;
+    --text-color-subtitulo: #101828;
 }
 
 /* Reset */
@@ -17,9 +18,13 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.barNav .container {
+.container {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.barNav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -104,4 +109,43 @@ body {
     font-family: 'Inter', sans-serif;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.metricas_container {
+    background-color: var(--background-color);
+    padding: 96px 96px;
+}
+
+.metricas_container .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metrica {
+    flex: 1 1 250px;
+    margin: 0 32px;
+}
+
+.numero {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.subtitulo_metrica {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-color-subtitulo);
+    margin-bottom: 10px;
+}
+
+.descricao_metrica {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 24px;
 }
